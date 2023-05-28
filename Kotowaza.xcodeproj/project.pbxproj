@@ -13,6 +13,9 @@
 		E46A76E72A19F4A6005E4E0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E46A76E52A19F4A6005E4E0B /* Main.storyboard */; };
 		E46A76E92A19F4A8005E4E0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E46A76E82A19F4A8005E4E0B /* Assets.xcassets */; };
 		E46A76EC2A19F4A8005E4E0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E46A76EA2A19F4A8005E4E0B /* LaunchScreen.storyboard */; };
+		E4AEABAF2A1CAA390064F915 /* KiwiMaru-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4AEABAE2A1CAA390064F915 /* KiwiMaru-Light.ttf */; };
+		E4AEABB12A1CAA490064F915 /* YujiSyuku-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4AEABB02A1CAA480064F915 /* YujiSyuku-Regular.ttf */; };
+		E4AEABB32A1CB3740064F915 /* KiwiMaru-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4AEABB22A1CB3740064F915 /* KiwiMaru-Medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		E46A76E82A19F4A8005E4E0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E46A76EB2A19F4A8005E4E0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E46A76ED2A19F4A8005E4E0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4AEABAE2A1CAA390064F915 /* KiwiMaru-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KiwiMaru-Light.ttf"; sourceTree = "<group>"; };
+		E4AEABB02A1CAA480064F915 /* YujiSyuku-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YujiSyuku-Regular.ttf"; sourceTree = "<group>"; };
+		E4AEABB22A1CB3740064F915 /* KiwiMaru-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KiwiMaru-Medium.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 		E46A76DE2A19F4A6005E4E0B /* Kotowaza */ = {
 			isa = PBXGroup;
 			children = (
+				E4AEABAD2A1CA9730064F915 /* fonts */,
 				E46A76DF2A19F4A6005E4E0B /* AppDelegate.swift */,
 				E46A76E12A19F4A6005E4E0B /* SceneDelegate.swift */,
 				E46A76E32A19F4A6005E4E0B /* ViewController.swift */,
@@ -65,6 +72,16 @@
 				E46A76ED2A19F4A8005E4E0B /* Info.plist */,
 			);
 			path = Kotowaza;
+			sourceTree = "<group>";
+		};
+		E4AEABAD2A1CA9730064F915 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E4AEABB02A1CAA480064F915 /* YujiSyuku-Regular.ttf */,
+				E4AEABAE2A1CAA390064F915 /* KiwiMaru-Light.ttf */,
+				E4AEABB22A1CB3740064F915 /* KiwiMaru-Medium.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +142,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4AEABB12A1CAA490064F915 /* YujiSyuku-Regular.ttf in Resources */,
+				E4AEABAF2A1CAA390064F915 /* KiwiMaru-Light.ttf in Resources */,
+				E4AEABB32A1CB3740064F915 /* KiwiMaru-Medium.ttf in Resources */,
 				E46A76EC2A19F4A8005E4E0B /* LaunchScreen.storyboard in Resources */,
 				E46A76E92A19F4A8005E4E0B /* Assets.xcassets in Resources */,
 				E46A76E72A19F4A6005E4E0B /* Main.storyboard in Resources */,
