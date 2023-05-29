@@ -14,6 +14,8 @@
 		E46A76E92A19F4A8005E4E0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E46A76E82A19F4A8005E4E0B /* Assets.xcassets */; };
 		E46A76EC2A19F4A8005E4E0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E46A76EA2A19F4A8005E4E0B /* LaunchScreen.storyboard */; };
 		E489C22C2A24347D002C4737 /* AnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E489C22B2A24347D002C4737 /* AnimalViewController.swift */; };
+		E489C22F2A245737002C4737 /* AnimalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E489C22D2A245737002C4737 /* AnimalCollectionViewCell.swift */; };
+		E489C2302A245737002C4737 /* AnimalCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E489C22E2A245737002C4737 /* AnimalCollectionViewCell.xib */; };
 		E4AEABAF2A1CAA390064F915 /* KiwiMaru-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4AEABAE2A1CAA390064F915 /* KiwiMaru-Light.ttf */; };
 		E4AEABB12A1CAA490064F915 /* YujiSyuku-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4AEABB02A1CAA480064F915 /* YujiSyuku-Regular.ttf */; };
 		E4AEABB32A1CB3740064F915 /* KiwiMaru-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4AEABB22A1CB3740064F915 /* KiwiMaru-Medium.ttf */; };
@@ -29,6 +31,8 @@
 		E46A76EB2A19F4A8005E4E0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E46A76ED2A19F4A8005E4E0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E489C22B2A24347D002C4737 /* AnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalViewController.swift; sourceTree = "<group>"; };
+		E489C22D2A245737002C4737 /* AnimalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCollectionViewCell.swift; sourceTree = "<group>"; };
+		E489C22E2A245737002C4737 /* AnimalCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimalCollectionViewCell.xib; sourceTree = "<group>"; };
 		E4AEABAE2A1CAA390064F915 /* KiwiMaru-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KiwiMaru-Light.ttf"; sourceTree = "<group>"; };
 		E4AEABB02A1CAA480064F915 /* YujiSyuku-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YujiSyuku-Regular.ttf"; sourceTree = "<group>"; };
 		E4AEABB22A1CB3740064F915 /* KiwiMaru-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KiwiMaru-Medium.ttf"; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 				E46A76E12A19F4A6005E4E0B /* SceneDelegate.swift */,
 				E46A76E32A19F4A6005E4E0B /* ViewController.swift */,
 				E46A76E52A19F4A6005E4E0B /* Main.storyboard */,
+				E489C22D2A245737002C4737 /* AnimalCollectionViewCell.swift */,
+				E489C22E2A245737002C4737 /* AnimalCollectionViewCell.xib */,
 				E46A76E82A19F4A8005E4E0B /* Assets.xcassets */,
 				E46A76EA2A19F4A8005E4E0B /* LaunchScreen.storyboard */,
 				E46A76ED2A19F4A8005E4E0B /* Info.plist */,
@@ -149,6 +155,7 @@
 				E4AEABAF2A1CAA390064F915 /* KiwiMaru-Light.ttf in Resources */,
 				E4AEABB32A1CB3740064F915 /* KiwiMaru-Medium.ttf in Resources */,
 				E46A76EC2A19F4A8005E4E0B /* LaunchScreen.storyboard in Resources */,
+				E489C2302A245737002C4737 /* AnimalCollectionViewCell.xib in Resources */,
 				E46A76E92A19F4A8005E4E0B /* Assets.xcassets in Resources */,
 				E46A76E72A19F4A6005E4E0B /* Main.storyboard in Resources */,
 			);
@@ -165,6 +172,7 @@
 				E46A76E02A19F4A6005E4E0B /* AppDelegate.swift in Sources */,
 				E489C22C2A24347D002C4737 /* AnimalViewController.swift in Sources */,
 				E46A76E22A19F4A6005E4E0B /* SceneDelegate.swift in Sources */,
+				E489C22F2A245737002C4737 /* AnimalCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
