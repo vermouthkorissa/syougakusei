@@ -7,73 +7,52 @@
 
 import UIKit
 
-class AnimalViewController: UIViewController,
-      UITableViewDelegate,
-                            UITableViewDataSource{
+class AnimalViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource {
+    // UITableViewのデータソースメソッド
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 16
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-
-        //セル上のTag(1)とつけたUILabelを生成
+        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let label = cell.contentView.viewWithTag(1) as! UILabel
-
-        //今回は簡易的にセルの番号をラベルのテキストに反映させる
         label.text = String(indexPath.row + 1)
-
         return cell
     }
     
-    
-    //セクションの中のセルの数を返す
+    // UICollectionViewのデータソースメソッド
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-
-        //今回はとりあえず12とする。（配列に表示させたいデータを入れている場合は配列のデータ数を返せば良い。）
         return 16
-        
-        //セルに表示する内容を記載する
-        func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-           
-            //storyboard上のセルを生成　storyboardのIdentifierで付けたものをここで設定する
-            let cell:UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-            
-
-            //セル上のTag(1)とつけたUILabelを生成
-            let label = cell.contentView.viewWithTag(1) as! UILabel
-
-            //今回は簡易的にセルの番号をラベルのテキストに反映させる
-            label.text = String(indexPath.row + 1)
-
-            return cell
-        
-            //セルのサイズを指定する処理
-            func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-
-                // 横方向のスペース調整
-                let horizontalSpace:CGFloat = 4
-
-                //セルのサイズを指定。画面上にセルを4つ表示させたいのであれば、デバイスの横幅を4分割した横幅　- セル間のスペース*3（セル間のスペースが3つあるため）
-                let cellSize:CGFloat = self.view.bounds.width/4 - horizontalSpace*3
-
-                // 正方形で返すためにwidth,heightを同じにする
-                return CGSize(width: cellSize, height: cellSize)
-            }
-            //セル選択時の処理
-            func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
-                //指定の遷移先に遷移する（最低限の処理）
-                performSegue(withIdentifier: "指定のIdentifier", sender: nil)
-            }
-        }
     }
-
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell: UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        let label = cell.contentView.viewWithTag(1) as! UILabel
+        label.text = String(indexPath.row + 1)
+        return cell
+    }
+    
+    // UICollectionViewのレイアウトメソッド
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let horizontalSpace: CGFloat = 4
+        let cellSize: CGFloat = self.view.bounds.width / 4 - horizontalSpace * 3
+        return CGSize(width: cellSize, height: cellSize)
+    }
+    
+    // UICollectionViewの選択メソッド
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "指定のIdentifier", sender: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
+}
+
+
+        // Do any additional setup after loading the view.
+    
     
 
     /*
@@ -86,4 +65,4 @@ class AnimalViewController: UIViewController,
     }
     */
 
-}
+
