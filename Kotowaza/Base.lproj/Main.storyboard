@@ -342,17 +342,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="x2o-Ig-PdN">
-                                    <size key="itemSize" width="134" height="134"/>
+                                    <size key="itemSize" width="253" height="280"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="W75-ID-YXb" customClass="AnimalCollectionViewCell">
-                                        <rect key="frame" x="0.0" y="0.0" width="134" height="134"/>
+                                        <rect key="frame" x="70" y="0.0" width="253" height="280"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="lA1-ml-HSz">
-                                            <rect key="frame" x="0.0" y="0.0" width="134" height="134"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="253" height="280"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="うま" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBL-EQ-s3a">
@@ -364,7 +364,10 @@
                                                 </label>
                                             </subviews>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="134" height="134"/>
+                                        <size key="customSize" width="253" height="280"/>
+                                        <connections>
+                                            <outlet property="label" destination="gBL-EQ-s3a" id="XDP-QW-rfw"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
