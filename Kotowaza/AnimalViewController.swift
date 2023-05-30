@@ -7,18 +7,11 @@
 
 import UIKit
 
-class AnimalViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource {
-    // UITableViewのデータソースメソッド
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 16
-    }
+class AnimalViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        let label = cell.contentView.viewWithTag(1) as! UILabel
-        label.text = String(indexPath.row + 1)
-        return cell
-    }
+    @IBOutlet weak var Label:UILabel!
+    
+    
     
     // UICollectionViewのデータソースメソッド
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -28,7 +21,26 @@ class AnimalViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
         let label = cell.contentView.viewWithTag(1) as! UILabel
-        label.text = String(indexPath.row + 1)
+        label.text = "うま"
+        label.text = "いぬ"
+        label.text = "さる"
+        label.text = "おに"
+        label.text = "ねこ"
+        label.text = "狐"
+        label.text = "むし"
+        label.text = "蛙"
+        label.text = "その他"
+        label.text = "魚"
+        label.text = "とら"
+        label.text = "狸"
+        label.text = "へび"
+        label.text = "はち"
+        label.text = "とり"
+        label.text = "仏"
+        
+        
+        
+        
         return cell
     }
     
