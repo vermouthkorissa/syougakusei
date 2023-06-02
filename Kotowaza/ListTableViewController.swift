@@ -18,6 +18,7 @@ class ListTableViewController: UITableViewController {
         required init?(coder aDecoder: NSCoder) {
             fatalError("init(coder:) has not been implemented")
         }
+    
 
 
 
@@ -47,6 +48,7 @@ class ListTableViewController: UITableViewController {
             let selectedViewController = dataArray[indexPath.item]
             navigationController?.pushViewController(selectedViewController, animated: true)
         }
+    
 
 
         override func viewDidLoad() {

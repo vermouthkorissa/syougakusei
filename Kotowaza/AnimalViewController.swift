@@ -42,17 +42,16 @@ class AnimalViewController: UIViewController, UICollectionViewDelegate, UICollec
             return
         }
         
-        let storyboard = self.storyboard!
-        let nextView = storyboard.instantiateViewController(withIdentifier: "ListTableViewController")
-        self.present(nextView, animated: true, completion: nil)
-
+        // 指定の遷移先に遷移する（最低限の処理）
+        performSegue(withIdentifier: "ListTableViewController", sender: nil)
+    }
 
         
        
         
        
     }
-}
+
 
 class CustomCell: UICollectionViewCell {
     var destinationViewController: UIViewController?
