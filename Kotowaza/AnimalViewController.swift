@@ -34,9 +34,7 @@ class AnimalViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     // UICollectionViewのデリゲートメソッド
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let selectedCell = collectionView.cellForItem(at: indexPath) as? CustomCell else {
-            return
-        }
+        
         
         
         // 指定の遷移先に遷移する（最低限の処理）

@@ -390,7 +390,7 @@
                     <navigationItem key="navigationItem" id="1Tr-LC-e2S"/>
                     <connections>
                         <outlet property="collectionView" destination="SZ0-kT-yNV" id="ZuW-Zt-piQ"/>
-                        <segue destination="3Jx-7m-ZJ5" kind="presentation" id="6VI-AM-CqW"/>
+                        <segue destination="3Jx-7m-ZJ5" kind="presentation" identifier="Cell" id="6VI-AM-CqW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cJZ-uC-0dj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
