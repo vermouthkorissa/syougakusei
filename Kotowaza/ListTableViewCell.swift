@@ -7,9 +7,9 @@
 
 import UIKit
 
-class ListTableVIewCellTableViewCell: UITableViewCell {
+class ListTableViewCell: UITableViewCell {
     
-    @IBOutlet var kotowazaButton: UIButton!
+    @IBOutlet weak var label: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

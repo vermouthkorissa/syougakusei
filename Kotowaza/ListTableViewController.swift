@@ -35,18 +35,13 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
     ]
     var str = 0
 
-   
+ 
         
         override func viewDidLoad() {
             super.viewDidLoad()
-            
-            
-        
-            
-        
             tableView.dataSource = self
             tableView.delegate = self
-          
+            tableView.register(UINib(nibName: "ListTableViewCell", bundle: nil), forCellReuseIdentifier: "listTableViewCell")
         }
 
 
@@ -55,43 +50,45 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
         }
 
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath)
-            cell.textLabel?.text = data[indexPath.row] [0]
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ListTableViewCell", for: indexPath) as! ListTableViewCell
+            
             print(indexPath.row,data[indexPath.row][0])
             
             if str == 0 {
-              
+               data = dataArray[0]
             }else if str == 1 {
-                
+               data = dataArray[1]
             }else if str == 2 {
-                
+               data = dataArray[2]
             }else if str == 3 {
-                
+               data = dataArray[3]
             }else if str == 4 {
-                
+               data = dataArray[4]
             }else if str == 5 {
-                
+               data = dataArray[5]
             }else if str == 6 {
-                
+               data = dataArray[6]
             }else if str == 7 {
-                
+               data = dataArray[7]
             }else if str == 8 {
-                
+               data = dataArray[8]
             }else if str == 9 {
-                
+               data = dataArray[9]
             }else if str == 10 {
-                
+               data = dataArray[10]
             }else if str == 11 {
-                
+               data = dataArray[11]
             }else if str == 12 {
-                
+               data = dataArray[12]
             }else if str == 13 {
-                
+               data = dataArray[13]
             }else if str == 14 {
-                
+               data = dataArray[14]
             }else if str == 15 {
-                
+               data = dataArray[15]
             }
+            print(data)
+            cell.label.text = data[indexPath.row][0]
             
             
             // セルのテキストにデータ配列の要素を表示
