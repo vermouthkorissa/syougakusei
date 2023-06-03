@@ -37,9 +37,6 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
     
     ]
         
-    
-
-
         override func viewDidLoad() {
             super.viewDidLoad()
             data = dataArray[0]

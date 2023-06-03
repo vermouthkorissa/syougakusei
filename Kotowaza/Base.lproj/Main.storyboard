@@ -289,7 +289,7 @@
             <objects>
                 <viewController id="XAF-Wo-Fil" customClass="AnimalViewController" customModule="Kotowaza" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u61-8B-AcY">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" dataMode="prototypes" id="SZ0-kT-yNV">
@@ -345,7 +345,7 @@
                     <navigationItem key="navigationItem" id="1Tr-LC-e2S"/>
                     <connections>
                         <outlet property="collectionView" destination="SZ0-kT-yNV" id="ZuW-Zt-piQ"/>
-                        <segue destination="6hF-so-Zcs" kind="show" identifier="ToLIstTableView" id="pjI-HZ-gG8"/>
+                        <segue destination="6hF-so-Zcs" kind="show" identifier="ToListTableView" id="pjI-HZ-gG8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cJZ-uC-0dj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -357,11 +357,11 @@
             <objects>
                 <viewController id="6hF-so-Zcs" customClass="ListTableViewController" customModule="Kotowaza" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fWr-el-j0K">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9h0-95-eVT">
-                                <rect key="frame" x="16" y="16" width="361" height="810"/>
+                                <rect key="frame" x="16" y="119" width="361" height="683"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="fWr-el-j0K" id="Ltx-dW-Kzu"/>
@@ -406,7 +406,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="VYj-Md-7JN"/>
-        <segue reference="U8O-kJ-k66"/>
+        <segue reference="lDU-aX-yGz"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
