@@ -7,70 +7,65 @@
 
 import UIKit
 
-class ListTableViewController: UITableViewController {
-    var data: [String] = []
+class ListTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    var data: [[String]] = []
     
-    init(data: [String]) {
-            super.init(style: .plain)
-            self.data = data
-        }
+    @IBOutlet var tableView: UITableView!
+    
+    
+
+    
+    let dataArray:[[[String]]] = [
+        [["馬子にも衣装", "どんな人でも美しく着飾れば、りっぱな人間に見えるもの。"],["馬の耳に念仏", "いくら言っても効き目がない"],["竹馬の友", "とても仲がよいこと"]],
+        [["飼い犬に手を噛まれる", "かわいがっていた人に裏切られる"],["犬が西向きゃ尾は東", "当たり前のこと"],["犬も歩けば棒に当たる", "思わぬ幸運に当たる、何かをしようとすると災難が降りかかる"]],
+        [["さるも木から落ちる","上手い人でも時には失敗する"],["犬猿の仲","とても仲が悪いこと"]],
+        [["鬼の目にも涙", "厳しい人でも哀れみの気持ちになる"],["渡る世間に鬼はない", "どこにでも親切な人はいるもの"], ["鬼に金棒","強いものにさらに強いものが加わり、無敵になること"]],
+        [["猫に小判", "価値が分からないものには役に立たない"],["猫の手もかりたい", "誰でもいいから手伝ってほしいくらい、いそがしい"]],
+        [["きつねの嫁入り", "日が出ているのに、雨がふること"], ["とらの威を借るきつね", "力の強い人にたよって、いばること"]],
+        [["一寸の虫にも五分のたましい", "とるに足らないようなものでもそれなりの意地があるからあなどりがたい"],["たで食う虫も好き好き", "人の好みはさまざまである"],["とんで火に入る夏の虫", "自分から、きけんなところに飛び込むこと"]],
+        [["井の中の蛙、大海を知らず", "自分の狭い知識にとらわれて、広い世界を知らない"],["かえるの子はかえる", "つまらない親からすぐれた子供はうまれない"], ["かえるの面に水", "どんな仕打ちをされても平気でいるようす"]],
+        [["えびでたいをつる", "少しのもので大きな利益を上げる"], ["柳の下のどじょう", "たまたま一度手に入っても、同じ場所でまたそれが起こるとはかぎらない"], ["亀の甲より年の功", "長い間の経験は何よりも貴重だ"]],
+        [["魚心あれば水心", "人の好きな気持ちは互いに反応するものだ"], ["にがした魚は大きい", "一度手に入れかけて失ったものは、実際よりも大きく、よく見えるものだということ。"], ["水清ければ魚棲まず", "人格があまりに潔白すぎると、他人がなじむことはむずかしいこと。"]],
+        [["虎の尾をふむ", "とてもきけんなこと."], ["虎穴にいらずんば虎子を得ず", "リスクをせおわないと、ほしいものは手に入らない"]],
+        [["たぬき寝入り", "ねむっているふりをすること"], [ "とらぬたぬきの皮算用", "たしかでないことを当てにして、あれこれと計画する"]],
+        [["蛇足", "余分でいらないもの"], [ "やぶをつついてへびをだす", "余計なことをしたせいで、災難にあうこと"]],
+        [["泣きつらにはち", "運が悪いことがかさなる"], ["あぶはちとらず", "いろいろとよくばるとすべてしっぱいする"]],
+        [["すずめ百までおどりわすれず", "幼い頃に覚えたことは年を取っても忘れない"], ["とんびがたかをうむ", "ふつうの親がすぐれた子供をうむ"], ["能ある鷹は爪を隠す", "本当に能力のある人はそれをひけらかさない"]],
+        [["仏の顔も三度まで", "どんなにやさしい人でも、失礼なことをくりかえせば、いつかは怒る"], ["地獄で仏に会ったよう", "くるしいときに、思いがけない助けにあったうれしさ"],["釈迦に説法", "その道にくわしい人にわざわざ、それに関して教えること"]]
         
-        required init?(coder aDecoder: NSCoder) {
-            fatalError("init(coder:) has not been implemented")
-        }
-   
-    
-
-
-
-    
-    let dataArray = [
-        ListTableViewController(data: ["馬子にも衣装", "馬の耳に念仏", "竹馬の友"]),
-            ListTableViewController(data: ["飼い犬に手を噛まれる", "犬が西向きゃ尾は東", "犬も歩けば棒に当たる"]),
-        ListTableViewController(data: ["さるも木から落ちる", "犬猿の仲"]),
-            ListTableViewController(data: ["鬼の目にも涙", "渡る世間に鬼はない", "鬼に金棒"]),
-        ListTableViewController(data: ["猫に小判", "猫の手もかりたい"]),
-            ListTableViewController(data: ["きつねの嫁入り", "とらの威を借るきつね"]),
-        ListTableViewController(data: ["一寸の虫にも五分のたましい", "たで食う虫も好き好き", "とんで火に入る夏の虫"]),
-            ListTableViewController(data: ["井の中の蛙、大海を知らず", "かえるの子はかえる", "かえるの面に水"]),
-        ListTableViewController(data: ["えびでたいをつる", "柳の下のどじょう", "亀の甲より年の功"]),
-            ListTableViewController(data: ["魚心あれば水心", "にがした魚は大きい", "水清ければ魚棲まず"]),
-        ListTableViewController(data: ["虎の尾をふむ", "虎穴にいらずんば虎子を得ず"]),
-            ListTableViewController(data: ["たぬき寝入り", "とらぬたぬきの皮算用"]),
-        ListTableViewController(data: ["蛇足", "やぶをつついてへびをだす"]),
-            ListTableViewController(data: ["泣きつらにはち", "あぶはちとらず"]),
-        ListTableViewController(data: ["すずめ百までおどりわすれず", "とんびがたかをうむ", "能ある鷹は爪を隠す"]),
-            ListTableViewController(data: ["仏の顔も三度まで", "地獄で仏に会ったよう", "釈迦に説法"]),
         
     
     ]
         
-        func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-            let selectedViewController = dataArray[indexPath.item]
-            navigationController?.pushViewController(selectedViewController, animated: true)
-        }
     
 
 
         override func viewDidLoad() {
             super.viewDidLoad()
-
-            tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell") // セルの登録
+            data = dataArray[0]
+            tableView.dataSource = self
+            tableView.delegate = self
+          
         }
 
-        // MARK: - Table view data source
 
-        override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return data.count // データ配列の要素数を返す
         }
 
-        override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-            cell.textLabel?.text = data[indexPath.row] // セルのテキストにデータ配列の要素を表示
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath)
+            cell.textLabel?.text = data[indexPath.row] [0]
+            print(indexPath.row,data[indexPath.row][0])// セルのテキストにデータ配列の要素を表示
             return cell
         }
 
     }
+struct kotowaza{
+    let name: String
+    let meaning: String
+    let animal: String
+}
 
 
    

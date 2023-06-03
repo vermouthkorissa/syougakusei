@@ -19,7 +19,7 @@ class AnimalViewController: UIViewController, UICollectionViewDelegate, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionCell", for: indexPath)
         let label = cell.contentView.viewWithTag(1) as! UILabel
         label.text = animalArray[indexPath.item]
         return cell
@@ -38,7 +38,7 @@ class AnimalViewController: UIViewController, UICollectionViewDelegate, UICollec
         
         
         // 指定の遷移先に遷移する（最低限の処理）
-        performSegue(withIdentifier: "Cell", sender: nil)
+        performSegue(withIdentifier: "ToListTableView", sender: nil)
     }
 
         
