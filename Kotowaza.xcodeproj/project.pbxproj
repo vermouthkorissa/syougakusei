@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E46003752A28830B005147F0 /* KotowazaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46003732A28830B005147F0 /* KotowazaViewController.swift */; };
-		E46003762A28830B005147F0 /* KotowazaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E46003742A28830B005147F0 /* KotowazaViewController.xib */; };
 		E46A76E02A19F4A6005E4E0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46A76DF2A19F4A6005E4E0B /* AppDelegate.swift */; };
 		E46A76E22A19F4A6005E4E0B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46A76E12A19F4A6005E4E0B /* SceneDelegate.swift */; };
 		E46A76E42A19F4A6005E4E0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46A76E32A19F4A6005E4E0B /* ViewController.swift */; };
@@ -26,7 +25,6 @@
 
 /* Begin PBXFileReference section */
 		E46003732A28830B005147F0 /* KotowazaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotowazaViewController.swift; sourceTree = "<group>"; };
-		E46003742A28830B005147F0 /* KotowazaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KotowazaViewController.xib; sourceTree = "<group>"; };
 		E46A76DC2A19F4A6005E4E0B /* Kotowaza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kotowaza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E46A76DF2A19F4A6005E4E0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E46A76E12A19F4A6005E4E0B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,7 +79,6 @@
 				E46A76E52A19F4A6005E4E0B /* Main.storyboard */,
 				E4C981012A25C43A004BA46B /* ListTableViewController.swift */,
 				E46003732A28830B005147F0 /* KotowazaViewController.swift */,
-				E46003742A28830B005147F0 /* KotowazaViewController.xib */,
 				E4C980FD2A25BCE1004BA46B /* ListTableViewCell.swift */,
 				E4C980FE2A25BCE1004BA46B /* ListTableViewCell.xib */,
 				E46A76E82A19F4A8005E4E0B /* Assets.xcassets */,
@@ -162,7 +159,6 @@
 			files = (
 				E4AEABB12A1CAA490064F915 /* YujiSyuku-Regular.ttf in Resources */,
 				E4C981002A25BCE1004BA46B /* ListTableViewCell.xib in Resources */,
-				E46003762A28830B005147F0 /* KotowazaViewController.xib in Resources */,
 				E4AEABAF2A1CAA390064F915 /* KiwiMaru-Light.ttf in Resources */,
 				E4AEABB32A1CB3740064F915 /* KiwiMaru-Medium.ttf in Resources */,
 				E46A76EC2A19F4A8005E4E0B /* LaunchScreen.storyboard in Resources */,

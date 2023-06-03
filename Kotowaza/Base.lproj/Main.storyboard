@@ -126,26 +126,21 @@
         <!--Root View Controller-->
         <scene sceneID="k8e-DR-WkF">
             <objects>
-                <tableViewController id="3Jx-7m-ZJ5" sceneMemberID="viewController">
+                <tableViewController id="3Jx-7m-ZJ5" customClass="ListTableViewController" customModule="Kotowaza" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="KvA-hp-BMK">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="sectionIndexBackgroundColor" red="0.95294117649999999" green="0.80784313730000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="Joc-lU-rwc" customClass="ListTableVIewCellTableViewCell" customModule="Kotowaza" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="50" width="393" height="70"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Joc-lU-rwc" id="qDA-aI-V0e">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="70"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="3Jx-7m-ZJ5" id="YdR-fB-TbO"/>
-                            <outlet property="delegate" destination="3Jx-7m-ZJ5" id="TwV-Jd-1Hy"/>
-                        </connections>
+                        <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="PEM-HP-ORJ">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <connections>
+                                <outlet property="dataSource" destination="KvA-hp-BMK" id="Kgy-Bw-kdd"/>
+                                <outlet property="delegate" destination="KvA-hp-BMK" id="bJX-1G-gIE"/>
+                            </connections>
+                        </tableView>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="lmT-Y6-s0v">
                         <barButtonItem key="leftBarButtonItem" title="もどる" id="hOe-2c-rW1">
@@ -155,7 +150,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xCm-gy-qWz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1856" y="-2"/>
+            <point key="canvasLocation" x="1855.7251908396945" y="-2.1126760563380285"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xg2-KW-RTw">
@@ -202,10 +197,10 @@
             </objects>
             <point key="canvasLocation" x="57" y="755"/>
         </scene>
-        <!--View Controller-->
+        <!--Kotowaza View Controller-->
         <scene sceneID="EMv-Hc-fH2">
             <objects>
-                <viewController id="Taq-Uy-TtE" sceneMemberID="viewController">
+                <viewController id="Taq-Uy-TtE" customClass="KotowazaViewController" customModule="Kotowaza" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mew-Gu-Gyc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -260,6 +255,10 @@
                         <viewLayoutGuide key="safeArea" id="u3M-Dy-3eL"/>
                         <color key="backgroundColor" red="0.95294117649999999" green="0.80784313730000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="imilabel" destination="JAv-GV-LOO" id="x2s-1M-aqs"/>
+                        <outlet property="kotolabel" destination="zL8-U5-O2M" id="UL5-rU-glh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5IA-23-sc0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -366,6 +365,9 @@
                                             </subviews>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="142" height="118"/>
+                                        <connections>
+                                            <segue destination="3Jx-7m-ZJ5" kind="show" identifier="Cell" id="M0w-yP-89h"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -418,8 +420,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="VYj-Md-7JN"/>
-        <segue reference="U8O-kJ-k66"/>
+        <segue reference="Gv0-tM-lTB"/>
+        <segue reference="ELz-dR-F2Z"/>
+        <segue reference="M0w-yP-89h"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">

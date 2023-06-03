@@ -9,12 +9,14 @@ import UIKit
 
 class KotowazaViewController: UIViewController {
     
-    @IBOutlet var label: UILabel!
-    
+    @IBOutlet var kotolabel: UILabel!
+    @IBOutlet var imilabel: UILabel!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
         // Do any additional setup after loading the view.
     }

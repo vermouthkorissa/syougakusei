@@ -43,7 +43,7 @@ class AnimalViewController: UIViewController, UICollectionViewDelegate, UICollec
         }
         
         // 指定の遷移先に遷移する（最低限の処理）
-        performSegue(withIdentifier: "ListTableViewController", sender: nil)
+        performSegue(withIdentifier: "Cell", sender: nil)
     }
 
         

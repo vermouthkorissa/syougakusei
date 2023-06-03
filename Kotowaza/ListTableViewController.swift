@@ -18,6 +18,7 @@ class ListTableViewController: UITableViewController {
         required init?(coder aDecoder: NSCoder) {
             fatalError("init(coder:) has not been implemented")
         }
+   
     
 
 
@@ -68,6 +69,7 @@ class ListTableViewController: UITableViewController {
             cell.textLabel?.text = data[indexPath.row] // セルのテキストにデータ配列の要素を表示
             return cell
         }
+
     }
 
 
