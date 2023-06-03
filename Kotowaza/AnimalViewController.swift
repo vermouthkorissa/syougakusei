@@ -6,6 +6,7 @@ class AnimalViewController: UIViewController, UICollectionViewDelegate, UICollec
     @IBOutlet weak var collectionView: UICollectionView!
     
     let animalArray = ["うま", "いぬ", "さる", "おに", "ねこ", "狐", "むし", "蛙", "他", "魚", "とら", "狸", "へび", "はち", "とり", "仏"]
+    
    
     override func viewDidLoad() {
         super.viewDidLoad()
