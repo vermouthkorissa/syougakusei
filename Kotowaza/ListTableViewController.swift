@@ -33,12 +33,16 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
         [["すずめ百までおどりわすれず", "幼い頃に覚えたことは年を取っても忘れない"], ["とんびがたかをうむ", "ふつうの親がすぐれた子供をうむ"], ["能ある鷹は爪を隠す", "本当に能力のある人はそれをひけらかさない"]],
         [["仏の顔も三度まで", "どんなにやさしい人でも、失礼なことをくりかえせば、いつかは怒る"], ["地獄で仏に会ったよう", "くるしいときに、思いがけない助けにあったうれしさ"],["釈迦に説法", "その道にくわしい人にわざわざ、それに関して教えること"]]
     ]
-    
+    var str = 0
+
    
         
         override func viewDidLoad() {
             super.viewDidLoad()
-            data = dataArray[0]
+            
+            
+        
+            
         
             tableView.dataSource = self
             tableView.delegate = self
@@ -53,9 +57,48 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath)
             cell.textLabel?.text = data[indexPath.row] [0]
-            print(indexPath.row,data[indexPath.row][0])// セルのテキストにデータ配列の要素を表示
+            print(indexPath.row,data[indexPath.row][0])
+            
+            if str == 0 {
+              
+            }else if str == 1 {
+                
+            }else if str == 2 {
+                
+            }else if str == 3 {
+                
+            }else if str == 4 {
+                
+            }else if str == 5 {
+                
+            }else if str == 6 {
+                
+            }else if str == 7 {
+                
+            }else if str == 8 {
+                
+            }else if str == 9 {
+                
+            }else if str == 10 {
+                
+            }else if str == 11 {
+                
+            }else if str == 12 {
+                
+            }else if str == 13 {
+                
+            }else if str == 14 {
+                
+            }else if str == 15 {
+                
+            }
+            
+            
+            // セルのテキストにデータ配列の要素を表示
             return cell
         }
+    
+        
 
     }
 struct kotowaza{

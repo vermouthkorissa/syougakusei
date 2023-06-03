@@ -4,10 +4,11 @@ class AnimalViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
+    var kotowaza = 0
     
     let animalArray = ["うま", "いぬ", "さる", "おに", "ねこ", "狐", "むし", "蛙", "他", "魚", "とら", "狸", "へび", "はち", "とり", "仏"]
     
-   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.delegate = self
@@ -36,26 +37,67 @@ class AnimalViewController: UIViewController, UICollectionViewDelegate, UICollec
     // UICollectionViewのデリゲートメソッド
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
+        if indexPath.row == 0 {
+            kotowaza = 0
+        }else if indexPath.row == 1 {
+            kotowaza = 1
+        }else if indexPath.row == 2 {
+            kotowaza = 2
+        }else if indexPath.row == 3 {
+            kotowaza = 3
+        }else if indexPath.row == 4 {
+            kotowaza = 4
+        }else if indexPath.row == 5 {
+            kotowaza = 5
+        }else if indexPath.row == 6 {
+            kotowaza = 6
+        }else if indexPath.row == 7 {
+            kotowaza = 7
+        }else if indexPath.row == 8 {
+            kotowaza = 8
+        }else if indexPath.row == 9 {
+            kotowaza = 9
+        }else if indexPath.row == 10 {
+            kotowaza = 10
+        }else if indexPath.row == 11 {
+            kotowaza = 11
+        }else if indexPath.row == 12 {
+            kotowaza = 12
+        }else if indexPath.row == 13 {
+            kotowaza = 13
+        }else if indexPath.row == 14 {
+            kotowaza = 14
+        }else if indexPath.row == 15 {
+            kotowaza = 15
+        }
+        
         
         
         // 指定の遷移先に遷移する（最低限の処理）
         performSegue(withIdentifier: "ToListTableView", sender: nil)
     }
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ToListTableView" {
+            let animalname = segue.destination as! ListTableViewController
+            animalname.str = kotowaza
+            
+        }
         
-       
         
-       
+        
+        
     }
-
-
-class CustomCell: UICollectionViewCell {
-    var destinationViewController: UIViewController?
     
-    // 他のプロパティやメソッドもここに追加することができます
+    
+    
+    class CustomCell: UICollectionViewCell {
+        var destinationViewController: UIViewController?
+        
+        // 他のプロパティやメソッドもここに追加することができます
+    }
+    
+    
+    
+    
+    
 }
-
-
-  
-
-
