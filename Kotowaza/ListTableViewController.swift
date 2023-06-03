@@ -42,17 +42,6 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
             tableView.dataSource = self
             tableView.delegate = self
             tableView.register(UINib(nibName: "ListTableViewCell", bundle: nil), forCellReuseIdentifier: "listTableViewCell")
-        }
-
-
-        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return data.count // データ配列の要素数を返す
-        }
-
-        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "ListTableViewCell", for: indexPath) as! ListTableViewCell
-            
-            print(indexPath.row,data[indexPath.row][0])
             
             if str == 0 {
                data = dataArray[0]
@@ -87,6 +76,22 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
             }else if str == 15 {
                data = dataArray[15]
             }
+            
+            
+            
+        }
+
+
+        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return data.count // データ配列の要素数を返す
+        }
+
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "listTableViewCell", for: indexPath) as! ListTableViewCell
+            
+            print(indexPath.row,data[indexPath.row][0])
+            
+            
             print(data)
             cell.label.text = data[indexPath.row][0]
             
