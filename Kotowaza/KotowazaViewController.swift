@@ -12,7 +12,8 @@ class KotowazaViewController: UIViewController {
     @IBOutlet var kotolabel: UILabel!
     @IBOutlet var imilabel: UILabel!
     
-
+    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -365,9 +365,6 @@
                                             </subviews>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="142" height="118"/>
-                                        <connections>
-                                            <segue destination="3Jx-7m-ZJ5" kind="show" identifier="Cell" id="M0w-yP-89h"/>
-                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -393,6 +390,7 @@
                     <navigationItem key="navigationItem" id="1Tr-LC-e2S"/>
                     <connections>
                         <outlet property="collectionView" destination="SZ0-kT-yNV" id="ZuW-Zt-piQ"/>
+                        <segue destination="3Jx-7m-ZJ5" kind="presentation" id="6VI-AM-CqW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cJZ-uC-0dj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -420,9 +418,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Gv0-tM-lTB"/>
+        <segue reference="VYj-Md-7JN"/>
         <segue reference="ELz-dR-F2Z"/>
-        <segue reference="M0w-yP-89h"/>
+        <segue reference="6VI-AM-CqW"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">

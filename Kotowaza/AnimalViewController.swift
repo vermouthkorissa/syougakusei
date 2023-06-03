@@ -38,9 +38,6 @@ class AnimalViewController: UIViewController, UICollectionViewDelegate, UICollec
             return
         }
         
-        guard let destinationVC = selectedCell.destinationViewController else {
-            return
-        }
         
         // 指定の遷移先に遷移する（最低限の処理）
         performSegue(withIdentifier: "Cell", sender: nil)
