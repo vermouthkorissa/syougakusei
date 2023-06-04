@@ -168,8 +168,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="すずめ百まで踊り忘れず" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zL8-U5-O2M">
-                                <rect key="frame" x="16" y="272" width="369" height="44"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="すずめ百まで踊り忘れず" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zL8-U5-O2M">
+                                <rect key="frame" x="16" y="242" width="369" height="133"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="YujiSyuku-Regular" family="Yuji Syuku" pointSize="30"/>
                                 <nil key="textColor"/>
@@ -204,7 +204,7 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="g5N-tu-dy1" kind="show" id="VYj-Md-7JN"/>
+                                    <segue destination="g5N-tu-dy1" kind="show" identifier="knowledgeView" id="VYj-Md-7JN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -221,10 +221,10 @@
             </objects>
             <point key="canvasLocation" x="3805.3435114503814" y="-2.1126760563380285"/>
         </scene>
-        <!--View Controller-->
+        <!--Similar View Controller-->
         <scene sceneID="aNf-9f-CTm">
             <objects>
-                <viewController id="g5N-tu-dy1" sceneMemberID="viewController">
+                <viewController id="g5N-tu-dy1" customClass="SimilarViewController" customModule="Kotowaza" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bJf-FW-anE">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -264,6 +264,9 @@
                         <color key="backgroundColor" red="0.95294117649999999" green="0.80784313730000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="uuv-Ve-Mj3"/>
+                    <connections>
+                        <outlet property="knowlabel" destination="vK7-i6-C3B" id="lcf-fD-B2M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ihx-VE-zhd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

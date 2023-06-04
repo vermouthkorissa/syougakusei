@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E441E1EC2A2C665900C0F88D /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E441E1EB2A2C665900C0F88D /* icon.png */; };
+		E441E1EF2A2C730000C0F88D /* SimilarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E441E1ED2A2C730000C0F88D /* SimilarViewController.swift */; };
+		E441E1F02A2C730000C0F88D /* SimilarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E441E1EE2A2C730000C0F88D /* SimilarViewController.xib */; };
 		E46003752A28830B005147F0 /* KotowazaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46003732A28830B005147F0 /* KotowazaViewController.swift */; };
 		E46A76E02A19F4A6005E4E0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46A76DF2A19F4A6005E4E0B /* AppDelegate.swift */; };
 		E46A76E22A19F4A6005E4E0B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46A76E12A19F4A6005E4E0B /* SceneDelegate.swift */; };
@@ -26,6 +28,8 @@
 
 /* Begin PBXFileReference section */
 		E441E1EB2A2C665900C0F88D /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		E441E1ED2A2C730000C0F88D /* SimilarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarViewController.swift; sourceTree = "<group>"; };
+		E441E1EE2A2C730000C0F88D /* SimilarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimilarViewController.xib; sourceTree = "<group>"; };
 		E46003732A28830B005147F0 /* KotowazaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotowazaViewController.swift; sourceTree = "<group>"; };
 		E46A76DC2A19F4A6005E4E0B /* Kotowaza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kotowaza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E46A76DF2A19F4A6005E4E0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +92,8 @@
 				E441E1EB2A2C665900C0F88D /* icon.png */,
 				E46A76ED2A19F4A8005E4E0B /* Info.plist */,
 				E489C22B2A24347D002C4737 /* AnimalViewController.swift */,
+				E441E1ED2A2C730000C0F88D /* SimilarViewController.swift */,
+				E441E1EE2A2C730000C0F88D /* SimilarViewController.xib */,
 			);
 			path = Kotowaza;
 			sourceTree = "<group>";
@@ -160,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E441E1F02A2C730000C0F88D /* SimilarViewController.xib in Resources */,
 				E4AEABB12A1CAA490064F915 /* YujiSyuku-Regular.ttf in Resources */,
 				E4C981002A25BCE1004BA46B /* ListTableViewCell.xib in Resources */,
 				E4AEABAF2A1CAA390064F915 /* KiwiMaru-Light.ttf in Resources */,
@@ -184,6 +191,7 @@
 				E489C22C2A24347D002C4737 /* AnimalViewController.swift in Sources */,
 				E4C980FF2A25BCE1004BA46B /* ListTableViewCell.swift in Sources */,
 				E46A76E22A19F4A6005E4E0B /* SceneDelegate.swift in Sources */,
+				E441E1EF2A2C730000C0F88D /* SimilarViewController.swift in Sources */,
 				E4C981022A25C43A004BA46B /* ListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
