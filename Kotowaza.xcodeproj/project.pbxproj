@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E441E1EC2A2C665900C0F88D /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E441E1EB2A2C665900C0F88D /* icon.png */; };
 		E46003752A28830B005147F0 /* KotowazaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46003732A28830B005147F0 /* KotowazaViewController.swift */; };
 		E46A76E02A19F4A6005E4E0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46A76DF2A19F4A6005E4E0B /* AppDelegate.swift */; };
 		E46A76E22A19F4A6005E4E0B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46A76E12A19F4A6005E4E0B /* SceneDelegate.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E441E1EB2A2C665900C0F88D /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		E46003732A28830B005147F0 /* KotowazaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotowazaViewController.swift; sourceTree = "<group>"; };
 		E46A76DC2A19F4A6005E4E0B /* Kotowaza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kotowaza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E46A76DF2A19F4A6005E4E0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				E4C980FE2A25BCE1004BA46B /* ListTableViewCell.xib */,
 				E46A76E82A19F4A8005E4E0B /* Assets.xcassets */,
 				E46A76EA2A19F4A8005E4E0B /* LaunchScreen.storyboard */,
+				E441E1EB2A2C665900C0F88D /* icon.png */,
 				E46A76ED2A19F4A8005E4E0B /* Info.plist */,
 				E489C22B2A24347D002C4737 /* AnimalViewController.swift */,
 			);
@@ -161,6 +164,7 @@
 				E4C981002A25BCE1004BA46B /* ListTableViewCell.xib in Resources */,
 				E4AEABAF2A1CAA390064F915 /* KiwiMaru-Light.ttf in Resources */,
 				E4AEABB32A1CB3740064F915 /* KiwiMaru-Medium.ttf in Resources */,
+				E441E1EC2A2C665900C0F88D /* icon.png in Resources */,
 				E46A76EC2A19F4A8005E4E0B /* LaunchScreen.storyboard in Resources */,
 				E46A76E92A19F4A8005E4E0B /* Assets.xcassets in Resources */,
 				E46A76E72A19F4A6005E4E0B /* Main.storyboard in Resources */,
