@@ -105,6 +105,11 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
         
         // セルのテキストにデータ配列の要素を表示
         return cell
+        
+    }
+    
+    func tableView(_ table: UITableView,didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "meaningView", sender: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
