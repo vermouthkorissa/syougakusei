@@ -7,13 +7,21 @@
 
 import UIKit
 
+
+
+
 class ListTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var data: [[String]] = []
+    var animals = [ListAnimal]()
     
     @IBOutlet var tableView: UITableView!
     
-    
+    struct ListAnimal {
+        let name: String
+        let meaning: String
+    }
 
+    
     
     let dataArray:[[[String]]] = [
         [["馬子にも衣装", "どんな人でも美しく着飾れば、りっぱな人間に見えるもの。"],["馬の耳に念仏", "いくら言っても効き目がない"],["竹馬の友", "とても仲がよいこと"]],
@@ -34,147 +42,167 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
         [["仏の顔も三度まで", "どんなにやさしい人でも、失礼なことをくりかえせば、いつかは怒る"], ["地獄で仏に会ったよう", "くるしいときに、思いがけない助けにあったうれしさ"],["釈迦に説法", "その道にくわしい人にわざわざ、それに関して教えること"]]
     ]
     var str = 0
-
- 
-        
-        override func viewDidLoad() {
-            super.viewDidLoad()
-            tableView.dataSource = self
-            tableView.delegate = self
-            tableView.register(UINib(nibName: "ListTableViewCell", bundle: nil), forCellReuseIdentifier: "listTableViewCell")
-            
-            if str == 0 {
-               data = dataArray[0]
-            }else if str == 1 {
-               data = dataArray[1]
-            }else if str == 2 {
-               data = dataArray[2]
-            }else if str == 3 {
-               data = dataArray[3]
-            }else if str == 4 {
-               data = dataArray[4]
-            }else if str == 5 {
-               data = dataArray[5]
-            }else if str == 6 {
-               data = dataArray[6]
-            }else if str == 7 {
-               data = dataArray[7]
-            }else if str == 8 {
-               data = dataArray[8]
-            }else if str == 9 {
-               data = dataArray[9]
-            }else if str == 10 {
-               data = dataArray[10]
-            }else if str == 11 {
-               data = dataArray[11]
-            }else if str == 12 {
-               data = dataArray[12]
-            }else if str == 13 {
-               data = dataArray[13]
-            }else if str == 14 {
-               data = dataArray[14]
-            }else if str == 15 {
-               data = dataArray[15]
-            }
-            
-            
-            
-        }
-
-
-        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return data.count // データ配列の要素数を返す
-        }
-
-        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "listTableViewCell", for: indexPath) as! ListTableViewCell
-            
-            print(indexPath.row,data[indexPath.row][0])
-            
-            
-            print(data)
-            cell.label.text = data[indexPath.row][0]
-            
-            
-            // セルのテキストにデータ配列の要素を表示
-            return cell
-        }
     
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.register(UINib(nibName: "ListTableViewCell", bundle: nil), forCellReuseIdentifier: "listTableViewCell")
         
-
+        if str == 0 {
+            data = dataArray[0]
+        }else if str == 1 {
+            data = dataArray[1]
+        }else if str == 2 {
+            data = dataArray[2]
+        }else if str == 3 {
+            data = dataArray[3]
+        }else if str == 4 {
+            data = dataArray[4]
+        }else if str == 5 {
+            data = dataArray[5]
+        }else if str == 6 {
+            data = dataArray[6]
+        }else if str == 7 {
+            data = dataArray[7]
+        }else if str == 8 {
+            data = dataArray[8]
+        }else if str == 9 {
+            data = dataArray[9]
+        }else if str == 10 {
+            data = dataArray[10]
+        }else if str == 11 {
+            data = dataArray[11]
+        }else if str == 12 {
+            data = dataArray[12]
+        }else if str == 13 {
+            data = dataArray[13]
+        }else if str == 14 {
+            data = dataArray[14]
+        }else if str == 15 {
+            data = dataArray[15]
+        }
+        
+        
+        
     }
-struct kotowaza{
-    let name: String
-    let meaning: String
-    let animal: String
-}
-
-
-   
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-
-
-    // MARK: - Table view data source
-
-
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return data.count // データ配列の要素数を返す
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "listTableViewCell", for: indexPath) as! ListTableViewCell
+        
+        print(indexPath.row,data[indexPath.row][0])
+        
+        
+        print(data)
+        cell.label.text = data[indexPath.row][0]
+        
+        
+        // セルのテキストにデータ配列の要素を表示
         return cell
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "meaningView" {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                guard let navigationController = segue.destination as? UINavigationController,
+                      let destination = navigationController.topViewController as? KotowazaViewController else {
+                    fatalError("KotowazaViewControllerの準備に失敗しました。")
+                }
+                
+                destination.animal = Animal(name: data[indexPath.row][0], meaning: data[indexPath.row][1])
+            }
+        }
     }
-    */
 
+        
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if let indexPath = tableView.indexPathForSelectedRow{
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
+        
+        
+    }
+    struct kotowaza{
+        let name: String
+        let meaning: String
+        let animal: String
+    }
+    
 
+    
+    
+    
+    // Uncomment the following line to preserve selection between presentations
+    // self.clearsSelectionOnViewWillAppear = false
+    
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    
+    
+    // MARK: - Table view data source
+    
+    
+    /*
+     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+     let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+     
+     // Configure the cell...
+     
+     return cell
+     }
+     */
+    
+    /*
+     // Override to support conditional editing of the table view.
+     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+     // Return false if you do not want the specified item to be editable.
+     return true
+     }
+     */
+    
+    /*
+     // Override to support editing the table view.
+     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+     if editingStyle == .delete {
+     // Delete the row from the data source
+     tableView.deleteRows(at: [indexPath], with: .fade)
+     } else if editingStyle == .insert {
+     // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+     }
+     }
+     */
+    
+    /*
+     // Override to support rearranging the table view.
+     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
+     
+     }
+     */
+    
+    /*
+     // Override to support conditional rearranging of the table view.
+     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+     // Return false if you do not want the item to be re-orderable.
+     return true
+     }
+     */
+    
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
+    
+}

@@ -7,16 +7,24 @@
 
 import UIKit
 
+struct Animal {
+    let name: String
+    let meaning: String
+}
+
 class KotowazaViewController: UIViewController {
+    
+    var animal: Animal!
+    
     
     @IBOutlet var kotolabel: UILabel!
     @IBOutlet var imilabel: UILabel!
     
-    
-        
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        kotolabel.text = animal.name
+        imilabel.text = animal.meaning
         
 
         // Do any additional setup after loading the view.

@@ -210,6 +210,7 @@
                         <viewLayoutGuide key="safeArea" id="u3M-Dy-3eL"/>
                         <color key="backgroundColor" red="0.95294117649999999" green="0.80784313730000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="O9R-If-lDJ"/>
                     <connections>
                         <outlet property="imilabel" destination="JAv-GV-LOO" id="x2s-1M-aqs"/>
                         <outlet property="kotolabel" destination="zL8-U5-O2M" id="UL5-rU-glh"/>
@@ -217,7 +218,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5IA-23-sc0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3446.5648854961833" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="2879" y="-2"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="aNf-9f-CTm">
@@ -279,14 +280,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ihx-VE-zhd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4405.3435114503818" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="3827" y="-2"/>
         </scene>
         <!--Animal View Controller-->
         <scene sceneID="DI1-6u-YSb">
             <objects>
                 <viewController id="XAF-Wo-Fil" customClass="AnimalViewController" customModule="Kotowaza" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u61-8B-AcY">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" dataMode="prototypes" id="SZ0-kT-yNV">
@@ -347,18 +348,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cJZ-uC-0dj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1067.9389312977098" y="-25.35211267605634"/>
+            <point key="canvasLocation" x="1022" y="-2"/>
         </scene>
         <!--List Table View Controller-->
         <scene sceneID="HCm-Fo-54P">
             <objects>
                 <viewController id="6hF-so-Zcs" customClass="ListTableViewController" customModule="Kotowaza" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fWr-el-j0K">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9h0-95-eVT">
-                                <rect key="frame" x="16" y="119" width="361" height="683"/>
+                                <rect key="frame" x="16" y="16" width="361" height="810"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" id="CBc-go-giZ">
@@ -368,6 +369,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="361" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Taq-Uy-TtE" kind="show" identifier="meaningView" id="M5R-ll-ZSp"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -388,7 +392,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lbg-AB-T1J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1971.7557251908397" y="-25.35211267605634"/>
+            <point key="canvasLocation" x="1931" y="-2"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LXW-Qj-LWs">
@@ -406,12 +410,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gho-dN-7O6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1068" y="-830"/>
+            <point key="canvasLocation" x="1021" y="-756"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="VYj-Md-7JN"/>
-        <segue reference="lDU-aX-yGz"/>
+        <segue reference="U8O-kJ-k66"/>
+        <segue reference="M5R-ll-ZSp"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
