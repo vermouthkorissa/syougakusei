@@ -229,8 +229,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vK7-i6-C3B">
-                                <rect key="frame" x="16" y="224" width="361" height="344"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vK7-i6-C3B">
+                                <rect key="frame" x="0.0" y="184" width="393" height="431"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">似ていることわざは
 「三つ子の魂百まで」</string>
@@ -265,7 +265,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="uuv-Ve-Mj3"/>
                     <connections>
-                        <outlet property="knowlabel" destination="vK7-i6-C3B" id="lcf-fD-B2M"/>
+                        <outlet property="knowlabel" destination="vK7-i6-C3B" id="paM-gQ-it0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ihx-VE-zhd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
