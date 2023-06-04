@@ -115,10 +115,9 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "meaningView" {
             if let indexPath = tableView.indexPathForSelectedRow {
-                guard let navigationController = segue.destination as? UINavigationController,
-                      let destination = navigationController.topViewController as? KotowazaViewController else {
-                    fatalError("KotowazaViewControllerの準備に失敗しました。")
-                }
+                guard let destination = segue.destination as? KotowazaViewController else {
+                                    fatalError("Failed to prepare DetailViewController.")
+                                }
                 
                 destination.animal = Animal(name: data[indexPath.row][0], meaning: data[indexPath.row][1])
             }
