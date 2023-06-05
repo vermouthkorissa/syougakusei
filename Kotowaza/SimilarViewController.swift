@@ -10,7 +10,6 @@ import UIKit
 class SimilarViewController: UIViewController {
 
     @IBOutlet var knowlabel: UILabel!
-    
     var str = ""
     
     override func viewDidLoad() {

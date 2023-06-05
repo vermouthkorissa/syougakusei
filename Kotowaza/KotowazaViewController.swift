@@ -15,8 +15,8 @@ struct Animal {
 class KotowazaViewController: UIViewController {
     
     var animal: Animal = Animal(name: "", meaning: "")
-    var knowlabel: String = ""
-
+    var knowlabel:UILabel?
+    
     
     @IBOutlet var kotolabel: UILabel!
     @IBOutlet var imilabel: UILabel!
@@ -24,6 +24,7 @@ class KotowazaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        knowlabel?.text = "テキストを設定する"
             kotolabel.text = animal.name
             imilabel.text = animal.meaning
 
@@ -34,7 +35,7 @@ class KotowazaViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "knowledgeView" {
             let nextView = segue.destination as! SimilarViewController
-            nextView.str = knowlabel
+            nextView.str = knowlabel?.text ?? ""
         }
     }
 
