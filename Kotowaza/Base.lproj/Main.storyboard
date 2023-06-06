@@ -258,6 +258,9 @@
                                     <fontDescription key="titleFontDescription" name="KiwiMaru-Light" family="Kiwi Maru Light" pointSize="32"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Y4f-2q-JMf" kind="unwind" unwindAction="backWithSender:" id="r3g-gX-fgK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ODW-2P-wNw"/>
@@ -269,6 +272,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ihx-VE-zhd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Y4f-2q-JMf" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4753.4351145038163" y="-2.1126760563380285"/>
         </scene>

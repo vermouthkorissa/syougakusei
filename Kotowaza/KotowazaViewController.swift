@@ -15,7 +15,7 @@ struct Animal {
 class KotowazaViewController: UIViewController {
     
     var animal: Animal = Animal(name: "", meaning: "")
-    var knowlabel:UILabel?
+   
     
     
     @IBOutlet var kotolabel: UILabel!
@@ -24,30 +24,32 @@ class KotowazaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        knowlabel?.text = "テキストを設定する"
-            kotolabel.text = animal.name
-            imilabel.text = animal.meaning
-
+        kotolabel.text = animal.name
+        imilabel.text = animal.meaning
+        
         // Do any additional setup after loading the view.
     }
-
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "knowledgeView" {
             let nextView = segue.destination as! SimilarViewController
-            nextView.str = knowlabel?.text ?? ""
+            nextView.str = kotolabel.text ?? "馬子にも衣装"
         }
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    
+        
+        
+        /*
+         // MARK: - Navigation
+         
+         // In a storyboard-based application, you will often want to do a little preparation before navigation
+         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         // Get the new view controller using segue.destination.
+         // Pass the selected object to the new view controller.
+         }
+         */
+        
     }
-    */
 
-}

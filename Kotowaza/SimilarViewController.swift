@@ -10,7 +10,9 @@ import UIKit
 class SimilarViewController: UIViewController {
 
     @IBOutlet var knowlabel: UILabel!
-    var str = ""
+
+    var str:String = "knowledgelabel"
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -102,7 +104,8 @@ class SimilarViewController: UIViewController {
         }
         // Do any additional setup after loading the view.
     }
-
+    
+    
 
     /*
     // MARK: - Navigation
