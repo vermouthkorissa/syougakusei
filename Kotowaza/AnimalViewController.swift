@@ -4,7 +4,9 @@ class AnimalViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
+    
     var kotowaza = 0
+    
     
     let animalArray = ["うま", "いぬ", "さる", "おに", "ねこ", "狐", "むし", "蛙", "他", "魚", "とら", "狸", "へび", "はち", "とり", "仏"]
     
@@ -32,6 +34,7 @@ class AnimalViewController: UIViewController, UICollectionViewDelegate, UICollec
         let horizontalSpace: CGFloat = 4
         let cellSize: CGFloat = collectionView.bounds.width / 4 - horizontalSpace * 3
         return CGSize(width: cellSize, height: cellSize)
+        
     }
     
     // UICollectionViewのデリゲートメソッド

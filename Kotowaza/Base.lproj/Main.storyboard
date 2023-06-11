@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EOA-hA-UtY">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -28,80 +28,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJF-Pq-XbW">
-                                <rect key="frame" x="49" y="751" width="294" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="スタンプをもらう" cornerStyle="small">
-                                    <backgroundConfiguration key="background" strokeWidth="47" strokeOutset="815">
-                                        <color key="backgroundColor" red="0.62352941179999999" green="0.85098039219999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" name="KiwiMaru-Light" family="Kiwi Maru Light" pointSize="32"/>
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="GxJ-qp-7Uc" kind="presentation" id="arZ-af-yCv"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="K" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCN-gU-rWu">
-                                <rect key="frame" x="168" y="42" width="55" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="YujiSyuku-Regular" family="Yuji Syuku" pointSize="54"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="O" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBC-M7-V02">
-                                <rect key="frame" x="168" y="112" width="55" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="YujiSyuku-Regular" family="Yuji Syuku" pointSize="54"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="W" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVn-95-3CM">
-                                <rect key="frame" x="171" y="322" width="55" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="YujiSyuku-Regular" family="Yuji Syuku" pointSize="54"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="O" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRt-pe-5MQ">
-                                <rect key="frame" x="169" y="252" width="55" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="YujiSyuku-Regular" family="Yuji Syuku" pointSize="54"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="T" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSP-sW-B4q">
-                                <rect key="frame" x="168" y="182" width="55" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="YujiSyuku-Regular" family="Yuji Syuku" pointSize="54"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCq-LX-nf3">
-                                <rect key="frame" x="171" y="392" width="55" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="YujiSyuku-Regular" family="Yuji Syuku" pointSize="54"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RF8-O8-VLy">
-                                <rect key="frame" x="171" y="532" width="55" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="YujiSyuku-Regular" family="Yuji Syuku" pointSize="54"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Z" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfC-K4-hgc">
-                                <rect key="frame" x="171" y="462" width="55" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="YujiSyuku-Regular" family="Yuji Syuku" pointSize="54"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Pj-s3-d6K">
-                                <rect key="frame" x="49" y="642" width="294" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="0qC-cc-tVz">
+                                <rect key="frame" x="170" y="40" width="60" height="635"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="K" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCN-gU-rWu">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="78.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="YujiSyuku-Regular" family="Yuji Syuku" pointSize="54"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBC-M7-V02">
+                                        <rect key="frame" x="0.0" y="79.666666666666686" width="60" height="78.333333333333314"/>
+                                        <fontDescription key="fontDescription" name="YujiSyuku-Regular" family="Yuji Syuku" pointSize="54"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSP-sW-B4q">
+                                        <rect key="frame" x="0.0" y="159" width="60" height="78.666666666666686"/>
+                                        <fontDescription key="fontDescription" name="YujiSyuku-Regular" family="Yuji Syuku" pointSize="54"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRt-pe-5MQ">
+                                        <rect key="frame" x="0.0" y="238.66666666666671" width="60" height="78.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="YujiSyuku-Regular" family="Yuji Syuku" pointSize="54"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="W" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVn-95-3CM">
+                                        <rect key="frame" x="0.0" y="318" width="60" height="78.666666666666686"/>
+                                        <fontDescription key="fontDescription" name="YujiSyuku-Regular" family="Yuji Syuku" pointSize="54"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCq-LX-nf3">
+                                        <rect key="frame" x="0.0" y="397.66666666666669" width="60" height="78.333333333333314"/>
+                                        <fontDescription key="fontDescription" name="YujiSyuku-Regular" family="Yuji Syuku" pointSize="54"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Z" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfC-K4-hgc">
+                                        <rect key="frame" x="0.0" y="477.00000000000006" width="60" height="78.666666666666686"/>
+                                        <fontDescription key="fontDescription" name="YujiSyuku-Regular" family="Yuji Syuku" pointSize="54"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RF8-O8-VLy">
+                                        <rect key="frame" x="0.0" y="556.66666666666663" width="60" height="78.333333333333371"/>
+                                        <fontDescription key="fontDescription" name="YujiSyuku-Regular" family="Yuji Syuku" pointSize="54"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Pj-s3-d6K">
+                                <rect key="frame" x="50" y="689" width="300" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="N9U-oz-ier"/>
+                                    <constraint firstAttribute="height" constant="60" id="aw6-zr-I0r"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="どうぶつをえらぶ" cornerStyle="small">
                                     <backgroundConfiguration key="background" strokeWidth="47" strokeOutset="705">
@@ -114,9 +99,39 @@
                                     <segue destination="XAF-Wo-Fil" kind="show" id="U8O-kJ-k66"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJF-Pq-XbW">
+                                <rect key="frame" x="50" y="763" width="300" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="SL3-0Z-Ixy"/>
+                                    <constraint firstAttribute="width" constant="300" id="c8J-hy-qXF"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="スタンプをもらう" cornerStyle="small">
+                                    <backgroundConfiguration key="background" strokeWidth="47" strokeOutset="815">
+                                        <color key="backgroundColor" red="0.62352941179999999" green="0.85098039219999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="KiwiMaru-Light" family="Kiwi Maru Light" pointSize="32"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="GxJ-qp-7Uc" kind="presentation" id="arZ-af-yCv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.95294117647058818" green="0.80784313725490198" blue="0.59215686274509804" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="3Pj-s3-d6K" firstAttribute="top" secondItem="0qC-cc-tVz" secondAttribute="bottom" constant="14" id="4ff-aZ-VIJ"/>
+                            <constraint firstItem="0qC-cc-tVz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="40" id="4mI-cc-UbX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0qC-cc-tVz" secondAttribute="trailing" constant="170" id="7RR-aI-nuQ"/>
+                            <constraint firstAttribute="bottom" secondItem="xJF-Pq-XbW" secondAttribute="bottom" constant="29" id="GZo-6F-uVm"/>
+                            <constraint firstItem="3Pj-s3-d6K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="GjW-9s-dXf"/>
+                            <constraint firstItem="xJF-Pq-XbW" firstAttribute="top" secondItem="3Pj-s3-d6K" secondAttribute="bottom" constant="14" id="S0k-Jv-Thc"/>
+                            <constraint firstItem="0qC-cc-tVz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="170" id="SG4-TK-Dld"/>
+                            <constraint firstItem="xJF-Pq-XbW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="gdo-ha-aio"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Pj-s3-d6K" secondAttribute="trailing" constant="50" id="kr7-j9-Mo7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xJF-Pq-XbW" secondAttribute="trailing" constant="50" id="xIX-T6-7eC"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="lAR-9r-RXN"/>
                 </viewController>
@@ -132,26 +147,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5v-TA-nSY">
-                                <rect key="frame" x="14" y="42" width="364" height="238"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5v-TA-nSY">
+                                <rect key="frame" x="15" y="30" width="363" height="212"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" subtitle="" cornerStyle="small">
-                                    <string key="title">　　　きょうも
-アクセスしてえらい！</string>
-                                    <fontDescription key="titleFontDescription" name="KiwiMaru-Medium" family="Kiwi Maru Medium" pointSize="34"/>
+                                <buttonConfiguration key="configuration" style="plain" title="アクセスしてえらい！" subtitle="" cornerStyle="small">
+                                    <fontDescription key="titleFontDescription" name="KiwiMaru-Medium" family="Kiwi Maru Medium" pointSize="32"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stamp" translatesAutoresizingMaskIntoConstraints="NO" id="qcs-5c-0cB">
+                                <rect key="frame" x="46" y="272" width="301" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Wr9-0d-u4j"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ObC-uO-7pA"/>
                         <color key="backgroundColor" red="0.95294117649999999" green="0.80784313730000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="T5v-TA-nSY" firstAttribute="leading" secondItem="ObC-uO-7pA" secondAttribute="leading" constant="15" id="KPi-xq-pwr"/>
+                            <constraint firstItem="ObC-uO-7pA" firstAttribute="bottom" secondItem="qcs-5c-0cB" secondAttribute="bottom" constant="270" id="UJs-Fd-EkI"/>
+                            <constraint firstItem="ObC-uO-7pA" firstAttribute="bottom" secondItem="T5v-TA-nSY" secondAttribute="bottom" constant="600" id="abi-QF-Veb"/>
+                            <constraint firstItem="ObC-uO-7pA" firstAttribute="trailing" secondItem="T5v-TA-nSY" secondAttribute="trailing" constant="15" id="asg-XU-yZF"/>
+                            <constraint firstItem="ObC-uO-7pA" firstAttribute="trailing" secondItem="qcs-5c-0cB" secondAttribute="trailing" constant="46" id="f6h-Qv-qwU"/>
+                            <constraint firstItem="qcs-5c-0cB" firstAttribute="top" secondItem="T5v-TA-nSY" secondAttribute="bottom" constant="30" id="isB-71-J6f"/>
+                            <constraint firstItem="qcs-5c-0cB" firstAttribute="leading" secondItem="ObC-uO-7pA" secondAttribute="leading" constant="46" id="jnm-xa-9jC"/>
+                            <constraint firstItem="T5v-TA-nSY" firstAttribute="top" secondItem="ObC-uO-7pA" secondAttribute="top" constant="30" id="kqN-IY-126"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="E8D-BM-gaC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uKF-U2-stV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="57" y="755"/>
+            <point key="canvasLocation" x="55.725190839694655" y="754.92957746478874"/>
         </scene>
         <!--Kotowaza View Controller-->
         <scene sceneID="EMv-Hc-fH2">
@@ -161,40 +189,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ことわざ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qiK-5f-WQ8">
-                                <rect key="frame" x="136" y="169" width="120" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ことわざ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qiK-5f-WQ8">
+                                <rect key="frame" x="110" y="148" width="173" height="44"/>
                                 <fontDescription key="fontDescription" name="KiwiMaru-Light" family="Kiwi Maru Light" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="すずめ百まで踊り忘れず" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zL8-U5-O2M">
-                                <rect key="frame" x="16" y="242" width="369" height="133"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="虎穴に入らずんば、虎子を得ず" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zL8-U5-O2M">
+                                <rect key="frame" x="31.666666666666657" y="222" width="330" height="87"/>
                                 <fontDescription key="fontDescription" name="YujiSyuku-Regular" family="Yuji Syuku" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="意味" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9o-3z-DBl">
-                                <rect key="frame" x="155" y="357" width="81" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="意味" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9o-3z-DBl">
+                                <rect key="frame" x="156" y="335" width="81" height="36.333333333333314"/>
                                 <fontDescription key="fontDescription" name="KiwiMaru-Light" family="Kiwi Maru Light" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAv-GV-LOO">
-                                <rect key="frame" x="27" y="452" width="336" height="159"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAv-GV-LOO">
+                                <rect key="frame" x="28" y="431.33333333333331" width="337" height="69.666666666666686"/>
                                 <color key="backgroundColor" red="0.95294117649999999" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">幼い頃に覚えたことは
-年を取っても忘れない</string>
+                                <string key="text">リスクをせおわないと、
+ほしいものは手に入らない</string>
                                 <fontDescription key="fontDescription" name="YujiSyuku-Regular" family="Yuji Syuku" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBR-JO-AEP">
-                                <rect key="frame" x="48" y="737" width="294" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBR-JO-AEP">
+                                <rect key="frame" x="72.666666666666686" y="731" width="248" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="cG9-bp-agw"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="ことわざプラス" cornerStyle="small">
                                     <backgroundConfiguration key="background" strokeWidth="47" strokeOutset="705">
@@ -210,6 +236,22 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="u3M-Dy-3eL"/>
                         <color key="backgroundColor" red="0.95294117649999999" green="0.80784313730000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qiK-5f-WQ8" firstAttribute="leading" secondItem="u3M-Dy-3eL" secondAttribute="leading" constant="110" id="0zM-Tq-l7l"/>
+                            <constraint firstItem="u9o-3z-DBl" firstAttribute="top" secondItem="zL8-U5-O2M" secondAttribute="bottom" constant="26" id="2ws-LO-hqM"/>
+                            <constraint firstItem="zBR-JO-AEP" firstAttribute="centerX" secondItem="mew-Gu-Gyc" secondAttribute="centerX" id="Dth-23-a1J"/>
+                            <constraint firstItem="JAv-GV-LOO" firstAttribute="top" secondItem="u9o-3z-DBl" secondAttribute="bottom" constant="60" id="GhT-Ro-ctY"/>
+                            <constraint firstItem="JAv-GV-LOO" firstAttribute="leading" secondItem="u3M-Dy-3eL" secondAttribute="leading" constant="28" id="MZJ-MD-5FN"/>
+                            <constraint firstItem="zL8-U5-O2M" firstAttribute="leading" secondItem="u3M-Dy-3eL" secondAttribute="leading" constant="31.5" id="Qar-HC-bmB"/>
+                            <constraint firstItem="u9o-3z-DBl" firstAttribute="leading" secondItem="u3M-Dy-3eL" secondAttribute="leading" constant="156" id="Qxb-4F-0BR"/>
+                            <constraint firstItem="u3M-Dy-3eL" firstAttribute="trailing" secondItem="u9o-3z-DBl" secondAttribute="trailing" constant="156" id="Ubj-Ou-qVa"/>
+                            <constraint firstItem="u3M-Dy-3eL" firstAttribute="trailing" secondItem="JAv-GV-LOO" secondAttribute="trailing" constant="28" id="Umt-59-b2I"/>
+                            <constraint firstItem="zL8-U5-O2M" firstAttribute="top" secondItem="qiK-5f-WQ8" secondAttribute="bottom" constant="30" id="ar6-zm-sXf"/>
+                            <constraint firstItem="zBR-JO-AEP" firstAttribute="top" secondItem="JAv-GV-LOO" secondAttribute="bottom" constant="230" id="oyd-mG-zeB"/>
+                            <constraint firstItem="u3M-Dy-3eL" firstAttribute="trailing" secondItem="zL8-U5-O2M" secondAttribute="trailing" constant="31.5" id="xhJ-OP-RQu"/>
+                            <constraint firstItem="qiK-5f-WQ8" firstAttribute="top" secondItem="u3M-Dy-3eL" secondAttribute="top" constant="45" id="yc5-1z-FMw"/>
+                            <constraint firstItem="u3M-Dy-3eL" firstAttribute="trailing" secondItem="qiK-5f-WQ8" secondAttribute="trailing" constant="110" id="zq1-kv-2UU"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="O9R-If-lDJ"/>
                     <connections>
@@ -229,27 +271,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vK7-i6-C3B">
-                                <rect key="frame" x="0.0" y="184" width="393" height="431"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">似ていることわざは
-「三つ子の魂百まで」</string>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vK7-i6-C3B">
+                                <rect key="frame" x="0.0" y="163" width="393" height="243.33333333333337"/>
+                                <string key="text">手柄の例えで「虎子」が
+使われているのは、大切にして
+手放さない物や秘蔵の金品を
+「虎の子」と言うように、虎が
+子を大事に守り育てるところから</string>
                                 <fontDescription key="fontDescription" name="YujiSyuku-Regular" family="Yuji Syuku" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HvC-uW-IFZ">
-                                <rect key="frame" x="0.0" y="599" width="385" height="131"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">自分なりにこのことわざを調べて
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HvC-uW-IFZ">
+                                <rect key="frame" x="46" y="456.33333333333331" width="301" height="95.666666666666686"/>
+                                <string key="text">自分なりに
+このことわざを調べて
 知識をどんどん増やそう！</string>
-                                <fontDescription key="fontDescription" name="KiwiMaru-Medium" family="Kiwi Maru Medium" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="KiwiMaru-Medium" family="Kiwi Maru Medium" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQd-aM-sYR">
-                                <rect key="frame" x="49" y="738" width="294" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQd-aM-sYR">
+                                <rect key="frame" x="50" y="728" width="293" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="f3P-DK-qKY"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="ホームへもどる" cornerStyle="small">
                                     <backgroundConfiguration key="background" strokeWidth="47" strokeOutset="705">
@@ -265,6 +311,18 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ODW-2P-wNw"/>
                         <color key="backgroundColor" red="0.95294117649999999" green="0.80784313730000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="vK7-i6-C3B" firstAttribute="leading" secondItem="ODW-2P-wNw" secondAttribute="leading" id="DPH-ZL-5gf"/>
+                            <constraint firstItem="vK7-i6-C3B" firstAttribute="top" secondItem="ODW-2P-wNw" secondAttribute="top" constant="60" id="H8r-NX-C6M"/>
+                            <constraint firstItem="ODW-2P-wNw" firstAttribute="trailing" secondItem="YQd-aM-sYR" secondAttribute="trailing" constant="50" id="LJk-Qe-vFF"/>
+                            <constraint firstItem="YQd-aM-sYR" firstAttribute="leading" secondItem="ODW-2P-wNw" secondAttribute="leading" constant="50" id="LnU-NW-UE9"/>
+                            <constraint firstItem="HvC-uW-IFZ" firstAttribute="top" secondItem="vK7-i6-C3B" secondAttribute="bottom" constant="50" id="Qju-S9-NtO"/>
+                            <constraint firstItem="HvC-uW-IFZ" firstAttribute="leading" secondItem="ODW-2P-wNw" secondAttribute="leading" constant="46" id="Qwl-Ac-mUF"/>
+                            <constraint firstItem="YQd-aM-sYR" firstAttribute="top" secondItem="HvC-uW-IFZ" secondAttribute="bottom" constant="176" id="R06-Zu-Qy2"/>
+                            <constraint firstItem="ODW-2P-wNw" firstAttribute="trailing" secondItem="HvC-uW-IFZ" secondAttribute="trailing" constant="46" id="bZj-6f-IjZ"/>
+                            <constraint firstItem="vK7-i6-C3B" firstAttribute="trailing" secondItem="ODW-2P-wNw" secondAttribute="trailing" id="jwI-mN-mGS"/>
+                            <constraint firstItem="ODW-2P-wNw" firstAttribute="bottom" secondItem="YQd-aM-sYR" secondAttribute="bottom" constant="30" id="svk-4y-bHJ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uuv-Ve-Mj3"/>
                     <connections>
@@ -286,9 +344,9 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" dataMode="prototypes" id="SZ0-kT-yNV">
                                 <rect key="frame" x="0.0" y="186" width="393" height="654"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="x2o-Ig-PdN">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="x2o-Ig-PdN">
                                     <size key="itemSize" width="142" height="118"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -319,9 +377,8 @@
                                     <outlet property="delegate" destination="XAF-Wo-Fil" id="oGB-Kb-Obm"/>
                                 </connections>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAQ-R9-hab">
-                                <rect key="frame" x="29" y="0.0" width="364" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAQ-R9-hab">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="198"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" subtitle="" cornerStyle="small">
                                     <string key="title">　どうぶつを
@@ -333,6 +390,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tsV-yd-7sE"/>
                         <color key="backgroundColor" red="0.95294117649999999" green="0.80784313730000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="vAQ-R9-hab" firstAttribute="top" secondItem="u61-8B-AcY" secondAttribute="top" id="BDI-O2-T2e"/>
+                            <constraint firstItem="vAQ-R9-hab" firstAttribute="trailing" secondItem="tsV-yd-7sE" secondAttribute="trailing" id="Dpf-e8-ZZf"/>
+                            <constraint firstItem="tsV-yd-7sE" firstAttribute="bottom" secondItem="vAQ-R9-hab" secondAttribute="bottom" constant="620" id="M2p-OE-F7z"/>
+                            <constraint firstItem="vAQ-R9-hab" firstAttribute="leading" secondItem="tsV-yd-7sE" secondAttribute="leading" id="cq4-A3-PmM"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1Tr-LC-e2S"/>
                     <connections>
@@ -374,8 +437,16 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="9h0-95-eVT" firstAttribute="top" secondItem="uZF-hd-H1Q" secondAttribute="top" constant="16" id="0Sk-hl-xEE"/>
+                            <constraint firstItem="uZF-hd-H1Q" firstAttribute="trailing" secondItem="9h0-95-eVT" secondAttribute="trailing" constant="16" id="ONq-F8-kJo"/>
+                            <constraint firstItem="uZF-hd-H1Q" firstAttribute="bottom" secondItem="9h0-95-eVT" secondAttribute="bottom" constant="16" id="OfJ-kb-gm9"/>
+                            <constraint firstItem="uZF-hd-H1Q" firstAttribute="bottom" secondItem="9h0-95-eVT" secondAttribute="bottom" constant="16" id="S9E-eN-RI8"/>
                             <constraint firstItem="uZF-hd-H1Q" firstAttribute="trailing" secondItem="9h0-95-eVT" secondAttribute="trailing" constant="16" id="XOf-s1-rHf"/>
+                            <constraint firstItem="9h0-95-eVT" firstAttribute="top" secondItem="uZF-hd-H1Q" secondAttribute="top" constant="16" id="adr-ji-HhP"/>
                             <constraint firstItem="uZF-hd-H1Q" firstAttribute="bottom" secondItem="9h0-95-eVT" secondAttribute="bottom" constant="16" id="aeU-5y-Ag6"/>
+                            <constraint firstItem="9h0-95-eVT" firstAttribute="top" secondItem="uZF-hd-H1Q" secondAttribute="top" constant="16" id="dbq-b2-1pm"/>
+                            <constraint firstItem="9h0-95-eVT" firstAttribute="leading" secondItem="uZF-hd-H1Q" secondAttribute="leading" constant="16" id="gY8-Db-8VR"/>
+                            <constraint firstItem="9h0-95-eVT" firstAttribute="leading" secondItem="uZF-hd-H1Q" secondAttribute="leading" constant="16" id="h2v-Oz-zXa"/>
+                            <constraint firstItem="uZF-hd-H1Q" firstAttribute="trailing" secondItem="9h0-95-eVT" secondAttribute="trailing" constant="16" id="ySX-0V-3yo"/>
                             <constraint firstItem="9h0-95-eVT" firstAttribute="leading" secondItem="uZF-hd-H1Q" secondAttribute="leading" constant="16" id="zJw-hd-qxW"/>
                         </constraints>
                     </view>
@@ -408,6 +479,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Stamp" width="1070" height="1141"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
