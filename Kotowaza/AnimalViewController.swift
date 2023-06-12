@@ -4,7 +4,7 @@ class AnimalViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
-    
+   
     var kotowaza = 0
     
     
@@ -36,6 +36,8 @@ class AnimalViewController: UIViewController, UICollectionViewDelegate, UICollec
         return CGSize(width: cellSize, height: cellSize)
         
     }
+    
+    
     
     // UICollectionViewのデリゲートメソッド
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
