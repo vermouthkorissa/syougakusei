@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EOA-hA-UtY">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -25,56 +25,56 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Kotowaza" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="0qC-cc-tVz">
-                                <rect key="frame" x="170" y="40" width="53" height="635"/>
+                                <rect key="frame" x="170" y="40" width="74" height="519"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="K" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCN-gU-rWu">
-                                        <rect key="frame" x="0.0" y="0.0" width="53" height="78.666666666666671"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="74" height="64"/>
                                         <fontDescription key="fontDescription" name="YujiSyuku-Regular" family="Yuji Syuku" pointSize="54"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBC-M7-V02">
-                                        <rect key="frame" x="0.0" y="79.666666666666686" width="53" height="78.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="65" width="74" height="64"/>
                                         <fontDescription key="fontDescription" name="YujiSyuku-Regular" family="Yuji Syuku" pointSize="54"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSP-sW-B4q">
-                                        <rect key="frame" x="0.0" y="159" width="53" height="78.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="130" width="74" height="64"/>
                                         <fontDescription key="fontDescription" name="YujiSyuku-Regular" family="Yuji Syuku" pointSize="54"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRt-pe-5MQ">
-                                        <rect key="frame" x="0.0" y="238.66666666666671" width="53" height="78.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="195" width="74" height="64"/>
                                         <fontDescription key="fontDescription" name="YujiSyuku-Regular" family="Yuji Syuku" pointSize="54"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="W" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVn-95-3CM">
-                                        <rect key="frame" x="0.0" y="318" width="53" height="78.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="260" width="74" height="64"/>
                                         <fontDescription key="fontDescription" name="YujiSyuku-Regular" family="Yuji Syuku" pointSize="54"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCq-LX-nf3">
-                                        <rect key="frame" x="0.0" y="397.66666666666669" width="53" height="78.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="325" width="74" height="64"/>
                                         <fontDescription key="fontDescription" name="YujiSyuku-Regular" family="Yuji Syuku" pointSize="54"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Z" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfC-K4-hgc">
-                                        <rect key="frame" x="0.0" y="477.00000000000006" width="53" height="78.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="390" width="74" height="64"/>
                                         <fontDescription key="fontDescription" name="YujiSyuku-Regular" family="Yuji Syuku" pointSize="54"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RF8-O8-VLy">
-                                        <rect key="frame" x="0.0" y="556.66666666666663" width="53" height="78.333333333333371"/>
+                                        <rect key="frame" x="0.0" y="455" width="74" height="64"/>
                                         <fontDescription key="fontDescription" name="YujiSyuku-Regular" family="Yuji Syuku" pointSize="54"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -82,7 +82,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Pj-s3-d6K">
-                                <rect key="frame" x="50" y="689" width="293" height="60"/>
+                                <rect key="frame" x="50" y="573" width="314" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="N9U-oz-ier"/>
                                     <constraint firstAttribute="height" constant="60" id="aw6-zr-I0r"/>
@@ -100,7 +100,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJF-Pq-XbW">
-                                <rect key="frame" x="50" y="763" width="293" height="60"/>
+                                <rect key="frame" x="50" y="647" width="314" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="SL3-0Z-Ixy"/>
                                     <constraint firstAttribute="width" constant="300" id="c8J-hy-qXF"/>
@@ -144,11 +144,11 @@
             <objects>
                 <viewController id="GxJ-qp-7Uc" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OEK-rF-uZE">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5v-TA-nSY">
-                                <rect key="frame" x="15" y="30" width="363" height="212"/>
+                                <rect key="frame" x="15" y="30" width="384" height="86"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="アクセスしてえらい！" subtitle="" cornerStyle="small">
                                     <fontDescription key="titleFontDescription" name="KiwiMaru-Medium" family="Kiwi Maru Medium" pointSize="32"/>
@@ -156,7 +156,7 @@
                                 </buttonConfiguration>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stamp" translatesAutoresizingMaskIntoConstraints="NO" id="qcs-5c-0cB">
-                                <rect key="frame" x="46" y="272" width="301" height="300"/>
+                                <rect key="frame" x="46" y="146" width="322" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="Wr9-0d-u4j"/>
                                 </constraints>
@@ -186,29 +186,29 @@
             <objects>
                 <viewController id="Taq-Uy-TtE" customClass="KotowazaViewController" customModule="Kotowaza" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mew-Gu-Gyc">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ことわざ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qiK-5f-WQ8">
-                                <rect key="frame" x="110" y="148" width="173" height="44"/>
+                                <rect key="frame" x="110" y="109" width="194" height="44"/>
                                 <fontDescription key="fontDescription" name="KiwiMaru-Light" family="Kiwi Maru Light" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="虎穴に入らずんば、虎子を得ず" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zL8-U5-O2M">
-                                <rect key="frame" x="31.666666666666657" y="222" width="330" height="87"/>
+                                <rect key="frame" x="31.666666666666657" y="183" width="351" height="87"/>
                                 <fontDescription key="fontDescription" name="YujiSyuku-Regular" family="Yuji Syuku" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="意味" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9o-3z-DBl">
-                                <rect key="frame" x="156" y="335" width="81" height="36.333333333333314"/>
+                                <rect key="frame" x="156" y="296" width="102" height="36.333333333333314"/>
                                 <fontDescription key="fontDescription" name="KiwiMaru-Light" family="Kiwi Maru Light" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAv-GV-LOO">
-                                <rect key="frame" x="28" y="431.33333333333331" width="337" height="69.666666666666686"/>
+                                <rect key="frame" x="28" y="392.33333333333331" width="358" height="69.666666666666686"/>
                                 <color key="backgroundColor" red="0.95294117649999999" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">リスクをせおわないと、
 ほしいものは手に入らない</string>
@@ -217,7 +217,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBR-JO-AEP">
-                                <rect key="frame" x="72.666666666666686" y="731" width="248" height="60"/>
+                                <rect key="frame" x="83" y="692" width="248" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="cG9-bp-agw"/>
                                 </constraints>
@@ -268,11 +268,11 @@
             <objects>
                 <viewController id="g5N-tu-dy1" customClass="SimilarViewController" customModule="Kotowaza" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bJf-FW-anE">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vK7-i6-C3B">
-                                <rect key="frame" x="0.0" y="163" width="393" height="243.33333333333337"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vK7-i6-C3B">
+                                <rect key="frame" x="0.0" y="163" width="414" height="243.33333333333337"/>
                                 <string key="text">手柄の例えで「虎子」が
 使われているのは、大切にして
 手放さない物や秘蔵の金品を
@@ -282,8 +282,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HvC-uW-IFZ">
-                                <rect key="frame" x="46" y="456.33333333333331" width="301" height="95.666666666666686"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HvC-uW-IFZ">
+                                <rect key="frame" x="46" y="456.33333333333326" width="322" height="95.666666666666742"/>
                                 <string key="text">自分なりに
 このことわざを調べて
 知識をどんどん増やそう！</string>
@@ -292,7 +292,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQd-aM-sYR">
-                                <rect key="frame" x="50" y="728" width="293" height="60"/>
+                                <rect key="frame" x="50" y="646" width="314" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="f3P-DK-qKY"/>
                                 </constraints>
@@ -339,7 +339,7 @@
             <objects>
                 <viewController id="XAF-Wo-Fil" customClass="AnimalViewController" customModule="Kotowaza" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u61-8B-AcY">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" dataMode="prototypes" id="SZ0-kT-yNV">
@@ -378,7 +378,7 @@
                                 </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAQ-R9-hab">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="198"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="116"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" subtitle="" cornerStyle="small">
                                     <string key="title">　どうぶつを
@@ -412,18 +412,18 @@
             <objects>
                 <viewController id="6hF-so-Zcs" customClass="ListTableViewController" customModule="Kotowaza" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fWr-el-j0K">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9h0-95-eVT">
-                                <rect key="frame" x="16" y="119" width="361" height="683"/>
+                                <rect key="frame" x="16" y="80" width="382" height="640"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" id="CBc-go-giZ">
-                                        <rect key="frame" x="0.0" y="50" width="361" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="50" width="382" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CBc-go-giZ" id="12w-I2-phM">
-                                            <rect key="frame" x="0.0" y="0.0" width="361" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="382" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
@@ -465,7 +465,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EOA-hA-UtY" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bq9-om-3vv">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
