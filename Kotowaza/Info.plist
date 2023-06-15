@@ -33,5 +33,7 @@
 	<string>YujiSyuku-Regular.ttf</string>
 	<key>item2</key>
 	<string>KiwiMaru-Medium.ttf</string>
+	<key>item4</key>
+	<string>Assets.xcassets</string>
 </dict>
 </plist>
